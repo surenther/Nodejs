@@ -8,8 +8,8 @@ const shopRoutes = require('./routes/shop');
 
 const app = express()
 
-app.engine('handlebars',expressHbs());
-app.set('view engine','handlebars');
+app.engine('hbs',expressHbs());
+app.set('view engine','hbs');
 app.set('views','views');
 
 app.use(bodyParser.urlencoded({extended: false}));
